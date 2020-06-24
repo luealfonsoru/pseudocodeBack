@@ -1,4 +1,4 @@
-# Front End: App para aprender a programar en pseudocódigo
+# Back End: App para aprender a programar en pseudocódigo
 
 ## Requisitos
 
