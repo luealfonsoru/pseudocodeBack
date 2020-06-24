@@ -52,7 +52,7 @@ fragment DIGIT
 ;
 
 NUMBER
-    : DIGIT+ ('.' DIGIT+)?
+    : ('-')? DIGIT+ ('.' DIGIT+)?
 ;
 
 fragment ID
