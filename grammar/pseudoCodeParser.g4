@@ -6,7 +6,10 @@ options {
 
 root: expr SPACE root | EOF;
 
-expr: DEF SPACE var_declaration | REWRITE SPACE var_declaration ;
+expr:
+	DEF SPACE var_declaration
+	| REWRITE SPACE var_declaration
+	| PRINT SPACE VAR END;
 
 var_declaration:
 	VAR END
@@ -50,4 +53,8 @@ bool_expr:
 	| bool_expr SPACE AND SPACE bool_expr
 	| NOT SPACE bool_expr;
 
-str_expr: STRING | STRING SPACE ADD str_expr;
+str_expr:
+	STRING
+	| VAR
+	| STRING SPACE ADD SPACE str_expr
+	| VAR SPACE ADD SPACE str_expr;

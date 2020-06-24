@@ -5,7 +5,7 @@ REWRITE : 'Haga que';
 SENTENCE: ':';
 END     : '.';
 DO      : 'haga';
-ASSIG   : 'igual a' | 'igual al' | 'sea igual a' | 'sea igual al';
+ASSIG   : 'igual a' | 'igual al' | 'sea igual a' | 'sea igual al' | 'igual a la' | 'igual a las' | 'sea igual a la' | 'sea igual a las';
 IS      : 'es';
 ELSE    : 'por el contrario';
 EQUAL   : 'es igual que' | 'sea igual que';
@@ -18,7 +18,7 @@ NUMBERDEF  : 'número' | 'números';
 STRINGDEF  : 'palabra' | 'palabras' | 'cadena';
 BOOLDEF    : 'expresión lógica';
 INDEX   : 'en' | 'en la posición' | 'en el indice';
-PRINT   : 'imprimir';
+PRINT   : 'Imprimir';
 VALUE   : 'valor del' | 'valor de la';
 CONTINUE    : 'Continuar';
 
